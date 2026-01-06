@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Juros do Cartão - Caio Ramalho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="conteudo__titulo">Simulador de Juros do Cartão</h1>
+        <p class="conteudo__subtitulo">Informe o valor total, a taxa de juros ao mês e o número de parcelas.</p>
+        
+        <!-- ------------------------------- Calculadora --------------------------------- -->
+
+        <form id="form-simulador" class="card">
+        <div class="campo">
+            <label for="valor">Valor Total (R$)</label>
+            <input type="number" id="valor" name="valor" min="0" step="0.01" inputmode="decimal" required placeholder="Ex: 1800.00">
+        </div>
+
+        <div class="campo">
+            <label for="taxa">Taxa de Juros ao Mês (%)</label>
+            <input type="number" id="taxa" name="taxa" min="0" step="0.01" inputmode="decimal" required placeholder="Ex: 2.5">
+        </div>
+
+        <div class="campo">
+            <label for="parcelas">Número de Parcelas</label>
+            <input type="number" id="parcelas" name="parcelas" min="1" max="36" required placeholder="Ex: 6">
+        </div>
+            <button type="submit" class="btn">Calcular</button>
+            <button type="button" id="btn-limpar" class="btn btn-outline">Limpar</button>
+        </form>
+
+        <!-- ------------------------------- Resultado --------------------------------- -->
+
+        <section id="resultado" class="card resultado escondido">
+            <h2>Resultado da simulação</h2>
+            <p><strong>Valor da compra:</strong> <span id="res-valor-compra"></span></p>
+            <p><strong>Taxa de juros ao mês:</strong> <span id="res-taxa"></span></p>
+            <p><strong>Número de parcelas:</strong> <span id="res-parcelas"></span></p>
+        
+        <hr>
+
+        <p><strong>Valor da parcela:</strong> <span id="res-parcela"></span></p>
+        <p><strong>Total a pagar:</strong> <span id="res-total"></span></p>
+        <p><strong>Total de juros pagos:</strong> <span id="res-juros"></span></p>
+
+        <p class="resultado__aviso">
+            * Cálculo usando juros compostos com parcela fixa (fórmula de financiamento.)
+        </p>
+        </section>
+
+        <footer class="footer">Desenvolvido por Caio Ramalho.</footer>
+    </div>
+
+    <!-- ------------------------------- Contatos --------------------------------- -->
+    
+       <footer class="rodape">
+        <div class="social-links">
+            <a href="https://github.com/caioramalhoo" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/caioramalhoo/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/caiovramalho/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
