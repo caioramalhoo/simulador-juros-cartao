@@ -1,4 +1,4 @@
-🔗 Demo Online: https://caioramalhoo.github.io/simulador-juros-cartao/
+🔗 Acesse Online: https://caioramalhoo.github.io/simulador-juros-cartao/
 
 # 💳 Simulador de Juros do Cartão
 
