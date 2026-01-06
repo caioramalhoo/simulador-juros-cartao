@@ -1,3 +1,5 @@
+🔗 Demo Online: https://caioramalhoo.github.io/simulador-juros-cartao/
+
 # 💳 Simulador de Juros do Cartão
 
 Aplicação web para simular compras parceladas com juros compostos, usando a fórmula de prestação fixa (PMT).
